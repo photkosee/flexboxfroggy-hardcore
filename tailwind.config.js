@@ -14,7 +14,10 @@ export default {
       },
       animation: {
         dance: "dance 1s infinite"
-      }
+      },
+      fontFamily: {
+        "title": ["Fredoka One", "cursive"],
+      },
     },
   },
   plugins: [],

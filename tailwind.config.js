@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        dance: {
+          "0%, 100%": { transform: "scale3d(1, 1, 1)" },
+          "50%": { transform: "scale3d(1.05, 1.05, 1.05)" }
+        }
+      },
+      animation: {
+        dance: "dance 1s infinite"
+      }
+    },
   },
   plugins: [],
 }

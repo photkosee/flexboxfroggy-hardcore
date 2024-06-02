@@ -1,6 +1,6 @@
-# <p align="center"><a href=""><img width="350" src="./public/logo.png"></a></p>
+# <p align="center"><a href="https://photkosee.github.io/flexboxfroggy-hardcore/"><img width="350" src="./public/logo.png"></a></p>
 
-<p align="center">Improve your understanding of CSS flexbox with unlimited number of challenges. <a href="">Play now!</a></p>
+<p align="center">Improve your understanding of CSS flexbox with unlimited number of challenges. <a href="https://photkosee.github.io/flexboxfroggy-hardcore/">Play now!</a></p>
 
 ## Feature
 - Inputing CSS code to relocate the frogs to get back to their lily pads

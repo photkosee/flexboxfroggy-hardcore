@@ -113,21 +113,21 @@ const Editor = () => {
           ))}
         </div>
 
-        <div className="text-[#777] pl-11 font-[monospace]">
+        <div className="text-[#777] pl-11 font-[monospace] text-nowrap">
           {`#pond {`}
           <br />
           &nbsp;&nbsp;{`display: flex;`}
           <br />
           <div
             className={`
-              ml-[16px] items-center
+              ml-[16px] items-center text-nowrap
               ${destFlexWrap === "nowrap" ? "hidden" : "flex"}
             `}
           >
             {`flex-wrap:`}
             <input
               type="text"
-              className="h-[20px] w-[calc(100%-100.5px)] ml-2
+              className="h-[20px] w-full ml-2
               outline-none overflow-auto"
               onChange={handleFlexWrap}
               value={currFlexWrap}
@@ -136,14 +136,14 @@ const Editor = () => {
           </div>
           <div
             className={`
-              ml-[16px] items-center
+              ml-[16px] items-center text-nowrap
               ${destFlexDirection === "row" ? "hidden" : "flex"}
             `}
           >
             {`flex-direction:`}
             <input
               type="text"
-              className="h-[20px] w-[calc(100%-142px)] ml-2
+              className="h-[20px] w-full ml-2
               outline-none overflow-auto"
               onChange={handleFlexDirection}
               value={currFlexDirection}
@@ -152,14 +152,14 @@ const Editor = () => {
           </div>
           <div
             className={`
-              ml-[16px] items-center
+              ml-[16px] items-center text-nowrap
               ${destJustifyContent === "flex-start" ? "hidden" : "flex"}
             `}
           >
             {`justify-content:`}
             <input
               type="text"
-              className="h-[20px] w-[calc(100%-150px)] ml-2
+              className="h-[20px] w-full ml-2
               outline-none overflow-auto"
               onChange={handleJustifyContent}
               value={currJustifyContent}
@@ -168,14 +168,14 @@ const Editor = () => {
           </div>
           <div
             className={`
-              ml-[16px] items-center
+              ml-[16px] items-center text-nowrap
               ${destAlignItems === "stretch" ? "hidden" : "flex"}
             `}
           >
             {`align-items:`}
             <input
               type="text"
-              className="h-[20px] w-[calc(100%-117px)] ml-2
+              className="h-[20px] w-full ml-2
               outline-none overflow-auto"
               onChange={handleAlignItems}
               value={currAlignItems}
@@ -184,14 +184,14 @@ const Editor = () => {
           </div>
           <div
             className={`
-              ml-[16px] items-center
+              ml-[16px] items-center text-nowrap
               ${destAlignContent === "stretch" ? "hidden" : "flex"}
             `}
           >
             {`align-content:`}
             <input
               type="text"
-              className="h-[20px] w-[calc(100%-133.5px)] ml-2
+              className="h-[20px] w-full ml-2
               outline-none overflow-auto"
               onChange={handleAlignContent}
               value={currAlignContent}

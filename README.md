@@ -3,14 +3,14 @@
 <p align="center">Improve your understanding of CSS flexbox with unlimited number of challenges. <a href="">Play now!</a></p>
 
 ## Feature
-- Inputing CSS code to relocate the frogs to get back to their lilypads
+- Inputing CSS code to relocate the frogs to get back to their lily pads
 - Unlimited levels
 
 ## Note
-The difficulty of the game can be enhanced by adding order or align-self as an option for each individual frog. The animation when moving to the next challenge can be added to smoothen the gameplay experience.
+The difficulty of the game can be enhanced by adding order or align-self as an option for each individual frog. The animation when transitioning to the next challenge can be added to smoothen the gameplay experience.
 
 ## Originality
-The concept and design for this project are credited to [this game](https://flexboxfroggy.com/).
+The concept and design for this project are credited to [this game](https://flexboxfroggy.com/) (including images of frogs and lily pads).
 
 ## Built with
 

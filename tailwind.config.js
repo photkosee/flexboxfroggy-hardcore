@@ -13,7 +13,8 @@ export default {
         }
       },
       animation: {
-        dance: "dance 1s infinite"
+        dance: "dance 1s infinite",
+        button: "dance 2s infinite",
       },
       fontFamily: {
         "title": ["Fredoka One", "cursive"],

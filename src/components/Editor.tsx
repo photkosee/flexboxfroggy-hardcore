@@ -95,6 +95,15 @@ const Editor = () => {
     }
   };
 
+  const handleReset = () => {
+    randomDest();
+    setCurrFlexWrap("");
+    setCurrFlexDirection("");
+    setCurrJustifyContent("");
+    setCurrAlignItems("");
+    setCurrAlignContent("");
+  };
+
   return (
     <div className="text-[15px] font-[#777] relative">
       <div
@@ -202,6 +211,14 @@ const Editor = () => {
         </div>
 
         <button
+          className="absolute bottom-3 right-20 py-1.5 px-3.5 bg-orange-500
+          text-white rounded-[4px] hover:bg-orange-500/90"
+          onClick={handleReset}
+        >
+          Give up
+        </button>
+
+        <button
           className="absolute bottom-3 right-3 py-1.5 px-3.5 bg-red-600
           text-white rounded-[4px] hover:bg-red-600/90 disabled:bg-red-600/50
           animate-button disabled:animate-none"
@@ -218,14 +235,7 @@ const Editor = () => {
                 destAlignContent === "stretch")
             )
           }
-          onClick={() => {
-            randomDest();
-            setCurrFlexWrap("");
-            setCurrFlexDirection("");
-            setCurrJustifyContent("");
-            setCurrAlignItems("");
-            setCurrAlignContent("");
-          }}
+          onClick={handleReset}
         >
           Next
         </button>

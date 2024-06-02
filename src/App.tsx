@@ -56,11 +56,18 @@ function App() {
             src="./logo.webp"
             className="h-[80px] self-center md:self-start md:h-[93px]"
           />
-          <p className="text-white text-[14px]">
+          <p className="text-white text-[14px] md:mb-2">
             Bring the frogs back to their lilypads by using CSS flexbox
             properties.
           </p>
           <Editor />
+          <a
+            href="https://github.com/photkosee/flexboxfroggy-hardcore"
+            target="_blank"
+            className="text-white text-[13px] underline md:mt-1 self-center"
+          >
+            GitHub
+          </a>
         </div>
 
         <div

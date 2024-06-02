@@ -6,7 +6,7 @@
 - Inputing CSS code to relocate the frogs to get back to their lily pads
 - Unlimited levels
 
-## Note
+## Further improvement
 The difficulty of the game can be enhanced by adding order or align-self as an option for each individual frog. The animation when transitioning to the next challenge can be added to smoothen the gameplay experience.
 
 ## Originality
@@ -18,6 +18,11 @@ The concept and design for this project are credited to [this game](https://flex
 - [React 18](https://react.dev/) - Development environment
 - [Tailwind CSS](https://tailwindcss.com/) - CSS framework
 - [Zustand](https://zustand-demo.pmnd.rs/) - State management
+
+## Author
+Phot Koseekrainiramon
+- [LinkedIn](https://www.linkedin.com/in/phot-kosee/)
+- [GitHub](https://github.com/photkosee)
 
 ## Contributing
 

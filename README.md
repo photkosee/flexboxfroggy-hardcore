@@ -7,7 +7,9 @@
 - Unlimited levels
 
 ## Further improvement
-The difficulty of the game can be enhanced by adding order or align-self as an option for each individual frog. The animation when transitioning to the next challenge can be added to smoothen the gameplay experience.
+- The difficulty of the game can be enhanced by adding order or align-self as an option for each individual frog.
+- The animation when transitioning to the next challenge can be added to smoothen the gameplay experience.
+- Still need to take some cases that the inputs from users are not exactly the same with the solution but generating the same layout into account. Or find a better way to check the answer from users.
 
 ## Originality
 The concept and design for this project are credited to [this game](https://flexboxfroggy.com/) (including images of frogs and lily pads).

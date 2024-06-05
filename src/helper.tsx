@@ -22,14 +22,11 @@ const isOfTypeJustifyContent = (value: string): value is JustifyContent => {
     "center",
     "space-between",
     "space-around",
-    "space-evenly",
   ].includes(value);
 };
 
 const isOfTypeAlignItems = (value: string): value is AlignItems => {
-  return ["flex-start", "flex-end", "center", "baseline", "stretch"].includes(
-    value
-  );
+  return ["flex-start", "flex-end", "center"].includes(value);
 };
 
 const isOfTypeAlignContent = (value: string): value is AlignContent => {
@@ -39,8 +36,6 @@ const isOfTypeAlignContent = (value: string): value is AlignContent => {
     "center",
     "space-between",
     "space-around",
-    "space-evenly",
-    "stretch",
   ].includes(value);
 };
 
@@ -52,8 +47,8 @@ const randomColor = () => {
 const randomFrogs = () => {
   let arraySize = 11;
   do {
-    arraySize = Math.floor(Math.random() * 11) + 6;
-  } while (arraySize === 10 || arraySize === 15);
+    arraySize = Math.floor(Math.random() * 11) + 7;
+  } while (arraySize % 5 === 0 || arraySize % 5 === 1);
   const randomArray = Array.from({ length: arraySize }, () => randomColor());
   return randomArray;
 };
@@ -80,19 +75,12 @@ const randomJustifyContent = () => {
     "center",
     "space-between",
     "space-around",
-    "space-evenly",
   ];
   return justifyContents[Math.floor(Math.random() * justifyContents.length)];
 };
 
 const randomAlignItems = () => {
-  const alignItems: AlignItems[] = [
-    "flex-start",
-    "flex-end",
-    "center",
-    "baseline",
-    "stretch",
-  ];
+  const alignItems: AlignItems[] = ["flex-start", "flex-end", "center"];
   return alignItems[Math.floor(Math.random() * alignItems.length)];
 };
 
@@ -103,8 +91,6 @@ const randomAlignContent = () => {
     "center",
     "space-between",
     "space-around",
-    "space-evenly",
-    "stretch",
   ];
   return alignContents[Math.floor(Math.random() * alignContents.length)];
 };

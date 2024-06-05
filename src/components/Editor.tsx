@@ -95,6 +95,19 @@ const Editor = () => {
     }
   };
 
+  const handleSolution = () => {
+    setCurrFlexWrap(destFlexWrap);
+    setCurrFlexDirection(destFlexDirection);
+    setCurrJustifyContent(destJustifyContent);
+    setCurrAlignItems(destAlignItems);
+    setCurrAlignContent(destAlignContent);
+    updateFlexWrap(destFlexWrap);
+    updateFlexDirection(destFlexDirection);
+    updateJustifyContent(destJustifyContent);
+    updateAlignItems(destAlignItems);
+    updateAlignContent(destAlignContent);
+  };
+
   const handleReset = () => {
     randomDest();
     setCurrFlexWrap("");
@@ -102,6 +115,19 @@ const Editor = () => {
     setCurrJustifyContent("");
     setCurrAlignItems("");
     setCurrAlignContent("");
+  };
+
+  const isHome = () => {
+    return !(
+      (currFlexWrap === destFlexWrap || destFlexWrap === "nowrap") &&
+      (currFlexDirection === destFlexDirection ||
+        destFlexDirection === "row") &&
+      (currJustifyContent === destJustifyContent ||
+        destJustifyContent === "flex-start") &&
+      (currAlignItems === destAlignItems || destAlignItems === "flex-start") &&
+      (currAlignContent === destAlignContent ||
+        destAlignContent === "flex-start")
+    );
   };
 
   return (
@@ -178,7 +204,7 @@ const Editor = () => {
           <div
             className={`
               ml-[16px] items-center text-nowrap
-              ${destAlignItems === "stretch" ? "hidden" : "flex"}
+              ${destAlignItems === "flex-start" ? "hidden" : "flex"}
             `}
           >
             {`align-items:`}
@@ -194,7 +220,7 @@ const Editor = () => {
           <div
             className={`
               ml-[16px] items-center text-nowrap
-              ${destAlignContent === "stretch" ? "hidden" : "flex"}
+              ${destAlignContent === "flex-start" ? "hidden" : "flex"}
             `}
           >
             {`align-content:`}
@@ -213,7 +239,7 @@ const Editor = () => {
         <button
           className="absolute bottom-3 right-20 py-1.5 px-3.5 bg-orange-500
           text-white rounded-[4px] hover:bg-orange-500/90"
-          onClick={handleReset}
+          onClick={handleSolution}
         >
           Give up
         </button>
@@ -222,19 +248,7 @@ const Editor = () => {
           className="absolute bottom-3 right-3 py-1.5 px-3.5 bg-red-600
           text-white rounded-[4px] hover:bg-red-600/90 disabled:bg-red-600/50
           animate-button disabled:animate-none"
-          disabled={
-            !(
-              (currFlexWrap === destFlexWrap || destFlexWrap === "nowrap") &&
-              (currFlexDirection === destFlexDirection ||
-                destFlexDirection === "row") &&
-              (currJustifyContent === destJustifyContent ||
-                destJustifyContent === "flex-start") &&
-              (currAlignItems === destAlignItems ||
-                destAlignItems === "stretch") &&
-              (currAlignContent === destAlignContent ||
-                destAlignContent === "stretch")
-            )
-          }
+          disabled={isHome()}
           onClick={handleReset}
         >
           Next

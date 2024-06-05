@@ -6,18 +6,15 @@ type JustifyContent =
   "flex-end" |
   "center" |
   "space-between" |
-  "space-around" |
-  "space-evenly"
+  "space-around"
 ;
-type AlignItems = "flex-start" | "flex-end" | "center" | "baseline" | "stretch";
+type AlignItems = "flex-start" | "flex-end" | "center";
 type AlignContent = 
   "flex-start" |
   "flex-end" |
   "center" |
   "space-between" |
-  "space-around" |
-  "space-evenly" |
-  "stretch"
+  "space-around"
 ;
 
 export { Color, FlexWrap, FlexDirection, JustifyContent, AlignItems, AlignContent };

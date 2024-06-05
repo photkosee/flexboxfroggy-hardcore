@@ -48,8 +48,8 @@ const useStore = create<State>((set, get) => ({
   flexWrap: "nowrap",
   flexDirection: "row",
   justifyContent: "flex-start",
-  alignItems: "stretch",
-  alignContent: "stretch",
+  alignItems: "flex-start",
+  alignContent: "flex-start",
   destFlexWrap: randomFlexWrap(),
   destFlexDirection: randomFlexDirection(),
   destJustifyContent: randomJustifyContent(),
@@ -77,8 +77,8 @@ const useStore = create<State>((set, get) => ({
   resetFlexWrap: () => set({ flexWrap: "nowrap" }),
   resetFlexDirection: () => set({ flexDirection: "row" }),
   resetJustifyContent: () => set({ justifyContent: "flex-start" }),
-  resetAlignItems: () => set({ alignItems: "stretch" }),
-  resetAlignContent: () => set({ alignContent: "stretch" }),
+  resetAlignItems: () => set({ alignItems: "flex-start" }),
+  resetAlignContent: () => set({ alignContent: "flex-start" }),
   isHome: () => {
     const state = get();
     return (
@@ -95,13 +95,13 @@ const useStore = create<State>((set, get) => ({
       destFlexWrap: randomFlexWrap(),
       destFlexDirection: randomFlexDirection(),
       destJustifyContent: randomJustifyContent(),
-      destAlignItems: random === 0 ? "stretch" : randomAlignItems(),
-      destAlignContent: random === 1 ? "stretch" : randomAlignContent(),
+      destAlignItems: random === 0 ? "flex-start" : randomAlignItems(),
+      destAlignContent: random === 1 ? "flex-start" : randomAlignContent(),
       flexWrap: "nowrap",
       flexDirection: "row",
       justifyContent: "flex-start",
-      alignItems: "stretch",
-      alignContent: "stretch",
+      alignItems: "flex-start",
+      alignContent: "flex-start",
     });
   },
 }));

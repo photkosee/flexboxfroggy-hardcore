@@ -32,6 +32,7 @@ const Editor = () => {
     updateJustifyContent,
     updateAlignItems,
     updateAlignContent,
+    setIsTransitioning,
     resetFlexWrap,
     resetFlexDirection,
     resetJustifyContent,
@@ -108,13 +109,18 @@ const Editor = () => {
     updateAlignContent(destAlignContent);
   };
 
-  const handleReset = () => {
+  const reset = () => {
     randomDest();
     setCurrFlexWrap("");
     setCurrFlexDirection("");
     setCurrJustifyContent("");
     setCurrAlignItems("");
     setCurrAlignContent("");
+  };
+
+  const handleReset = () => {
+    setIsTransitioning();
+    setTimeout(reset, 1200);
   };
 
   const isHome = () => {

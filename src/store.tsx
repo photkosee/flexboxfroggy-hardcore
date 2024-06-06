@@ -14,12 +14,13 @@ import {
   randomJustifyContent,
 } from "./helper";
 
-interface State {
+export interface State {
   flexWrap: FlexWrap;
   flexDirection: FlexDirection;
   justifyContent: JustifyContent;
   alignItems: AlignItems;
   alignContent: AlignContent;
+  transitioning: boolean;
   destFlexWrap: FlexWrap;
   destFlexDirection: FlexDirection;
   destJustifyContent: JustifyContent;
@@ -35,6 +36,7 @@ interface State {
   updateDestJustifyContent: (newJustifyContent: JustifyContent) => void;
   updateDestAlignItems: (newAlignItems: AlignItems) => void;
   updateDestAlignContent: (newAlignContent: AlignContent) => void;
+  setIsTransitioning: () => void;
   resetFlexWrap: () => void;
   resetFlexDirection: () => void;
   resetJustifyContent: () => void;
@@ -50,6 +52,7 @@ const useStore = create<State>((set, get) => ({
   justifyContent: "flex-start",
   alignItems: "flex-start",
   alignContent: "flex-start",
+  transitioning: false,
   destFlexWrap: randomFlexWrap(),
   destFlexDirection: randomFlexDirection(),
   destJustifyContent: randomJustifyContent(),
@@ -79,6 +82,7 @@ const useStore = create<State>((set, get) => ({
   resetJustifyContent: () => set({ justifyContent: "flex-start" }),
   resetAlignItems: () => set({ alignItems: "flex-start" }),
   resetAlignContent: () => set({ alignContent: "flex-start" }),
+  setIsTransitioning: () => set({ transitioning: true }),
   isHome: () => {
     const state = get();
     return (
@@ -102,6 +106,7 @@ const useStore = create<State>((set, get) => ({
       justifyContent: "flex-start",
       alignItems: "flex-start",
       alignContent: "flex-start",
+      transitioning: false,
     });
   },
 }));

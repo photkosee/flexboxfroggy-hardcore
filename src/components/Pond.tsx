@@ -25,7 +25,7 @@ const Pond: React.FC<PondProps> = ({
 }) => {
   return (
     <div
-      className="flex absolute size-full p-2 z-20"
+      className="flex absolute size-full p-2 z-20 overflow-hidden"
       style={{
         flexWrap: flexWrap ?? "nowrap",
         flexDirection: flexDirection ?? "row",

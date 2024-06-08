@@ -58,23 +58,23 @@ Error generating stack: `+o.message+`
           text-right bg-[#999] text-[#d5d5d5]`,children:[1,2,3,4,5,6,7,8,9,10].map(P=>L.jsxs("div",{children:[P,L.jsx("br",{})]},P))}),L.jsxs("div",{className:"text-[#777] pl-11 font-[monospace] text-nowrap",children:["#pond {",L.jsx("br",{}),"  ","display: flex;",L.jsx("br",{}),L.jsxs("div",{className:`
               ml-[16px] items-center text-nowrap
               ${e==="nowrap"?"hidden":"flex"}
-            `,children:["flex-wrap:",L.jsx("input",{type:"text",className:`h-[20px] w-full ml-2\r
+            `,children:["flex-wrap:",L.jsx("input",{type:"text",className:`h-[20px] w-full ml-2 rounded-none\r
               outline-none overflow-auto`,onChange:he,value:f}),";"]}),L.jsxs("div",{className:`
               ml-[16px] items-center text-nowrap
               ${t==="row"?"hidden":"flex"}
-            `,children:["flex-direction:",L.jsx("input",{type:"text",className:`h-[20px] w-full ml-2\r
+            `,children:["flex-direction:",L.jsx("input",{type:"text",className:`h-[20px] w-full ml-2 rounded-none\r
               outline-none overflow-auto`,onChange:vt,value:d}),";"]}),L.jsxs("div",{className:`
               ml-[16px] items-center text-nowrap
               ${n==="flex-start"?"hidden":"flex"}
-            `,children:["justify-content:",L.jsx("input",{type:"text",className:`h-[20px] w-full ml-2\r
+            `,children:["justify-content:",L.jsx("input",{type:"text",className:`h-[20px] w-full ml-2 rounded-none\r
               outline-none overflow-auto`,onChange:yt,value:x}),";"]}),L.jsxs("div",{className:`
               ml-[16px] items-center text-nowrap
               ${r==="flex-start"?"hidden":"flex"}
-            `,children:["align-items:",L.jsx("input",{type:"text",className:`h-[20px] w-full ml-2\r
+            `,children:["align-items:",L.jsx("input",{type:"text",className:`h-[20px] w-full ml-2 rounded-none\r
               outline-none overflow-auto`,onChange:nr,value:_}),";"]}),L.jsxs("div",{className:`
               ml-[16px] items-center text-nowrap
               ${l==="flex-start"?"hidden":"flex"}
-            `,children:["align-content:",L.jsx("input",{type:"text",className:`h-[20px] w-full ml-2\r
+            `,children:["align-content:",L.jsx("input",{type:"text",className:`h-[20px] w-full ml-2 rounded-none\r
               outline-none overflow-auto`,onChange:xl,value:A}),";"]}),"}"]}),L.jsx("button",{className:`absolute bottom-3 right-20 py-1.5 px-3.5 bg-orange-500\r
           text-white rounded-[4px] hover:bg-orange-500/90`,onClick:fn,children:"Give up"}),L.jsx("button",{className:`absolute bottom-3 right-3 py-1.5 px-3.5 bg-red-600\r
           text-white rounded-[4px] hover:bg-red-600/90 disabled:bg-red-600/50\r

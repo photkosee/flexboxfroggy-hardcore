@@ -168,7 +168,7 @@ const Editor = () => {
             {`flex-wrap:`}
             <input
               type="text"
-              className="h-[20px] w-full ml-2
+              className="h-[20px] w-full ml-2 rounded-none
               outline-none overflow-auto"
               onChange={handleFlexWrap}
               value={currFlexWrap}
@@ -184,7 +184,7 @@ const Editor = () => {
             {`flex-direction:`}
             <input
               type="text"
-              className="h-[20px] w-full ml-2
+              className="h-[20px] w-full ml-2 rounded-none
               outline-none overflow-auto"
               onChange={handleFlexDirection}
               value={currFlexDirection}
@@ -200,7 +200,7 @@ const Editor = () => {
             {`justify-content:`}
             <input
               type="text"
-              className="h-[20px] w-full ml-2
+              className="h-[20px] w-full ml-2 rounded-none
               outline-none overflow-auto"
               onChange={handleJustifyContent}
               value={currJustifyContent}
@@ -216,7 +216,7 @@ const Editor = () => {
             {`align-items:`}
             <input
               type="text"
-              className="h-[20px] w-full ml-2
+              className="h-[20px] w-full ml-2 rounded-none
               outline-none overflow-auto"
               onChange={handleAlignItems}
               value={currAlignItems}
@@ -232,7 +232,7 @@ const Editor = () => {
             {`align-content:`}
             <input
               type="text"
-              className="h-[20px] w-full ml-2
+              className="h-[20px] w-full ml-2 rounded-none
               outline-none overflow-auto"
               onChange={handleAlignContent}
               value={currAlignContent}

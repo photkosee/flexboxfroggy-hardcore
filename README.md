@@ -2,15 +2,15 @@
 
 <p align="center">Improve your understanding of CSS flexbox with an unlimited number of challenges. <a href="https://photkosee.github.io/flexboxfroggy-hardcore/">Play now!</a></p>
 
-### Table of Contents
+## Table of Contents
 
-1. [What this does?](#what-this-does)
-2. [Further Improvements](#further-improvements)
-3. [Credits](#credits)
-4. [Built with](#built-with)
-5. [Author](#author)
-6. [Deployment](#deployment)
-7. [Contributing](#contributing)
+- [What this does?](#what-this-does)
+- [Further Improvements](#further-improvements)
+- [Credits](#credits)
+- [Built with](#built-with)
+- [Author](#author)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
 
 ## What this does?
 
@@ -36,7 +36,7 @@ The concept and design for this project are credited to [this game](https://flex
 ## Author
 
 Phot Koseekrainiramon
-- [LinkedIn](https://www.linkedin.com/in/phot-kosee/)
+- [LinkedIn](https://www.linkedin.com/in/photkosee/)
 - [GitHub](https://github.com/photkosee)
 
 ## Deployment
